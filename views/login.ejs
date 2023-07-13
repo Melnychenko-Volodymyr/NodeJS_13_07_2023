@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>   
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація на сайті</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.js" integrity="sha512-//dh2f858Fr7wqGN0IrKqOwzFRMSNDFepYnq0R0Nau+vpQRaUYwViFi7KVniyCALFPOaaMd1n38d5q0pboHjUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <h1>Авторизація</h1>
+    <form method="post" action="/login">
+      <div>
+        <label for="username">Ім'я користувача:</label>
+        <input type="text" class="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Пароль:</label>
+        <input type="password" class="password" name="password" required>
+      </div>
+      <button class="button">Увійти</button>
+    </form>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
